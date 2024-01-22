@@ -6,7 +6,8 @@
 import { errorModal, getData } from './fetchData.js';
 
 //get list of bundles from json
-const promiseBundles = getData('https://raw.githubusercontent.com/ninjulia/bundleBuilder/master/_data/bundles.json');
+// const promiseBundles = getData('https://raw.githubusercontent.com/ninjulia/bundleBuilder/master/data/bundles.json');
+const promiseBundles = getData('./data/bundles.json');
 const bundles = await Promise.resolve(promiseBundles)
 	.then((data) => data)
 	.catch((e) => errorModal(e));
