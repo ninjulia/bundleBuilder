@@ -1,0 +1,365 @@
+/****************************
+/* Import Supporting CSS
+/****************************/
+
+@import url('reset.css');
+@import url('colors.css');
+@import url('typography.css');
+@import url('utilities.css');
+@import url('button.css');
+
+/****************************
+/* Component Styling
+/****************************/
+
+/* handle noscript */
+.error {
+	text-align: center;
+	background: pink;
+}
+
+/*remove elements if they're empty */
+#bundler > *:empty,
+li:empty,
+a:empty {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 0px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 0px;
+	cursor: pointer;
+	display: none;
+}
+
+/* DEMO: layout only */
+#bundler {
+	height: 100lvh;
+	margin: 0;
+	padding: 0;
+}
+
+#bundlerContainer {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	justify-items: center;
+	align-items: start;
+	height: 100lvh;
+}
+
+#bundlerForm {
+	/* DEMO: account for shentel template size */
+	width: 47.5rem;
+
+	/* account for size of radio button images @70px */
+	--button-height: var(--space-xl);
+}
+
+fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+header,
+#internet,
+#phone,
+#video,
+#price {
+	border-bottom: 1px solid var(--brand-grey);
+}
+
+/****************************
+/* HEADER
+/****************************/
+
+#sortBy {
+	gap: var(--space-s);
+	position: relative;
+}
+
+#sortBy legend {
+	position: absolute;
+	left: calc(var(--space-xl) * -1);
+}
+
+#sortBy label {
+	gap: 1em; /* using ems here to size to font */
+	cursor: pointer;
+}
+
+/* add focus indicator for keyboard users */
+#bundlerForm label:has(input:focus) {
+	outline: 2px solid var(--primary-dk);
+	outline-offset: var(--space-xs);
+}
+
+/* hide focus indicator for mouse */
+#bundlerForm label:has(input:focus:not(:focus-visible)) {
+	outline: none;
+}
+
+/* inclusively hide browser's radio button via: https://www.sarasoueidan.com/blog/inclusively-hiding-and-styling-checkboxes-and-radio-buttons/ */
+#bundlerForm label input[type='radio'] {
+	opacity: 0;
+	z-index: 4;
+	outline: none;
+}
+
+#sortBy label input[type='radio'] ~ .checkmark {
+	/* using ems here to size to font */
+	width: 2em;
+	height: 2em;
+	clip-path: circle(0.5em at 50% 50%);
+	background-color: var(--brand-grey);
+	transition: opacity 0.15s ease-in-out;
+}
+
+#sortBy label input[type='radio']:checked ~ .checkmark {
+	clip-path: none;
+	background-color: transparent;
+	background-image: url('../img/sortBy.svg');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+/****************************
+/* SERVICES
+/****************************/
+
+.service-container {
+	margin-block-start: calc(var(--space-m) * -1);
+	background-image: linear-gradient(to bottom, #fff 35%, var(--brand-grey) 35%, var(--brand-grey) 40%, #fff 40%);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#services label {
+	display: grid;
+	grid-template-columns: 1;
+	grid-template-rows: var(--button-height) auto;
+	grid-template-areas: 'interaction' 'title';
+	justify-items: center;
+	align-items: end;
+	gap: 0.5em; /* using ems here to size with font */
+	position: relative;
+	cursor: pointer;
+}
+
+/*place radio button, .checkmark, image */
+#services label input,
+#services label [role='tooltip'],
+#services label .checkmark,
+#services label img {
+	grid-area: interaction;
+	height: var(--button-height);
+	width: var(--button-height);
+	cursor: pointer;
+}
+
+/*account for long distance width variance */
+#services label:has(#P0002) img {
+	width: 112px;
+}
+
+#services label [role='tooltip'] {
+	background: #fff;
+	padding-block: var(--space-3xs);
+	padding-inline-start: 7px;
+	padding-inline-end: var(--space-3xs);
+	font-size: var(--step--1);
+	text-align: left;
+	word-break: break-word;
+	width: calc(var(--button-height) + (var(--space-xs) * 2));
+	height: auto;
+	filter: drop-shadow(1px 1px 1px var(--brand-grey));
+	border: 1px solid var(--brand-grey);
+
+	z-index: 3;
+	margin-inline-start: calc(var(--button-height) * 2.5);
+	align-self: center;
+	position: absolute;
+}
+
+#services label [role='tooltip']::before {
+	display: block;
+	content: '';
+	background-image: url(../img/toolPoint.svg);
+	background-position: left center;
+	background-repeat: no-repeat;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	margin-inline-start: calc(var(--space-s) * -1.18);
+}
+
+/* styled radio indicator */
+#services label .checkmark {
+	clip-path: circle(0.5em at 50% 50%);
+	background-color: var(--brand-grey);
+	transition: opacity 0.15s ease-in-out;
+	z-index: 1;
+}
+
+#services label input[type='radio'] ~ img {
+	z-index: 2;
+	transition: opacity 0.15s ease-in-out;
+}
+
+/* handle checked / unchecked / disabled appearance */
+#services label input[type='radio']:not(:checked) ~ img,
+#services label [role='tooltip'],
+#services label:hover input[type='radio']:checked ~ [role='tooltip'],
+#services label input[type='radio']:checked ~ .checkmark,
+#services label input[type='radio']:disabled ~ .checkmark {
+	visibility: hidden;
+	opacity: 0;
+}
+
+#services label:hover [role='tooltip'],
+#services label:hover input[type='radio']:not(:checked) ~ img,
+#services label:focus input[type='radio']:not(:checked) ~ img,
+#services label input[type='radio']:checked ~ img {
+	visibility: visible;
+	opacity: 1;
+}
+
+/*on hover or focus, show desaturated image with outer glow */
+#services label:hover input[type='radio']:not(:checked, :disabled) ~ img,
+#services label:focus input[type='radio']:not(:checked, :disabled) ~ img {
+	filter: grayscale(1) drop-shadow(0.5em 0.5em 0.5em var(--brand-grey));
+}
+
+#services label input[type='radio']:disabled ~ img {
+	visibility: visible;
+	opacity: 1;
+	filter: grayscale(1) invert(100%);
+}
+
+/*apply transition so keyboard users can see tooltip */
+#services label input:focus ~ [role='tooltip'] {
+	visibility: visible;
+	animation: transitionOpacity 2s ease-in-out;
+	animation-delay: 1000ms;
+}
+
+#services label input:focus:not(:focus-visible) ~ [role='tooltip'] {
+	animation: none;
+}
+
+@keyframes transitionOpacity {
+	0% {
+		opacity: 0;
+	}
+	25% {
+		opacity: 1;
+	}
+	75% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+/****************************
+/* PRICE
+/****************************/
+#price,
+#results {
+	display: grid;
+	grid-template-columns: var(--space-3xl) auto;
+	grid-template-rows: 1fr;
+	gap: var(--space-m);
+}
+
+#price h2,
+#results h2 {
+	justify-self: start;
+	align-self: start;
+}
+
+#priceContent,
+.results-container {
+	justify-self: start;
+	align-self: center;
+	width: calc(5 * var(--space-3xl));
+	gap: var(--space-s);
+
+	/* margin: 0 auto; */
+}
+
+#priceDisplay {
+	height: calc(var(--button-height) + var(--space-m));
+	flex-grow: 1;
+	max-width: calc(var(--button-height) * 3);
+}
+
+#priceDisplay h3 {
+	text-align: center;
+}
+
+#scrollLeft,
+#scrollRight {
+	height: calc(var(--button-height) - var(--space-l));
+	width: calc(var(--button-height) - var(--space-l));
+	border-width: var(--space-m);
+	border-style: solid;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+	background-color: unset;
+}
+
+#scrollLeft {
+	border-right-color: var(--secondary);
+	border-left-color: transparent;
+}
+
+#scrollRight {
+	border-right-color: transparent;
+	border-left-color: var(--secondary);
+}
+
+/****************************
+/* Results
+/****************************/
+#resultsDisplay {
+	padding: var(--space-xs);
+	width: calc(5 * var(--space-3xl));
+}
+
+.results-container h3 {
+	text-align: center;
+	line-height: 1.6;
+}
+
+.results-container ul {
+	padding-inline-start: var(--space-xs);
+}
+
+.results-container .btn {
+	display: inline-block;
+}
+
+/****************************
+/* Dialog
+/****************************/
+
+#bundlerContainer:has(dialog) {
+	position: relative;
+}
+
+#bundlerContainer dialog {
+	position: absolute;
+	z-index: 1000;
+	align-self: center;
+	max-width: 50%;
+}
+
+#bundlerContainer ::backdrop {
+	background-color: var(--brand-grey);
+	background-color: black;
+	opacity: 0.75;
+}

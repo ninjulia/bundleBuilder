@@ -1,0 +1,462 @@
+/****************************
+/* Modern CSS Utilities because it's 2024
+/****************************/
+
+/* @link https://utopia.fyi/type/calculator?c=320,18,1.2,800,14,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+	/* --space-s is base unit */
+
+	--space-3xs: clamp(0.3125rem, 0.3542rem + -0.2083vw, 0.25rem);
+	--space-2xs: clamp(0.5625rem, 0.6458rem + -0.4167vw, 0.4375rem);
+	--space-xs: clamp(0.875rem, 1rem + -0.625vw, 0.6875rem);
+	--space-s: clamp(1.125rem, 1.2917rem + -0.8333vw, 0.875rem);
+	--space-m: clamp(1.6875rem, 1.9375rem + -1.25vw, 1.3125rem);
+	--space-l: clamp(2.25rem, 2.5833rem + -1.6667vw, 1.75rem);
+	--space-xl: clamp(3.375rem, 3.875rem + -2.5vw, 2.625rem);
+	--space-2xl: clamp(4.5rem, 5.1667rem + -3.3333vw, 3.5rem);
+	--space-3xl: clamp(6.75rem, 7.75rem + -5vw, 5.25rem);
+}
+
+/****************************
+/* Margins
+/****************************/
+
+.mAuto {
+	margin: 0 auto;
+}
+.m0 {
+	margin: 0;
+}
+.m1 {
+	margin: var(--space-s);
+}
+.m2 {
+	margin: var(--space-m);
+}
+.m3 {
+	margin: var(--space-l);
+}
+.m4 {
+	margin: var(--space-xl);
+}
+.m5 {
+	margin: var(--space-2xl);
+}
+.m6 {
+	margin: var(--space-3xl);
+}
+
+/* margin-block */
+.mB0 {
+	margin-block: 0;
+}
+.mB1 {
+	margin-block: var(--space-s);
+}
+.mB2 {
+	margin-block: var(--space-m);
+}
+.mB3 {
+	margin-block: var(--space-l);
+}
+.mB4 {
+	margin-block: var(--space-xl);
+}
+.mB5 {
+	margin-block: var(--space-2xl);
+}
+.mB6 {
+	margin-block: var(--space-3xl);
+}
+
+/* margin-block-start */
+.mBS0 {
+	margin-block-start: 0;
+}
+.mBS1 {
+	margin-block-start: var(--space-s);
+}
+.mBS2 {
+	margin-block-start: var(--space-m);
+}
+.mBS3 {
+	margin-block-start: var(--space-l);
+}
+.mBS4 {
+	margin-block-start: var(--space-xl);
+}
+.mBS5 {
+	margin-block-start: var(--space-2xl);
+}
+.mBS6 {
+	margin-block-start: var(--space-3xl);
+}
+
+/* margin-block-end */
+.mBE0 {
+	margin-block-end: 0;
+}
+.mBE1 {
+	margin-block-end: var(--space-s);
+}
+.mBE2 {
+	margin-block-end: var(--space-m);
+}
+.mBE3 {
+	margin-block-end: var(--space-l);
+}
+.mBE4 {
+	margin-block-end: var(--space-xl);
+}
+.mBE5 {
+	margin-block-end: var(--space-2xl);
+}
+.mBE6 {
+	margin-block-end: var(--space-3xl);
+}
+
+/* margin-inline */
+.mIAuto {
+	margin-inline: auto;
+}
+.mI0 {
+	margin-inline: 0;
+}
+.mI1 {
+	margin-inline: var(--space-s);
+}
+.mI2 {
+	margin-inline: var(--space-m);
+}
+.mI3 {
+	margin-inline: var(--space-l);
+}
+.mI4 {
+	margin-inline: var(--space-xl);
+}
+.mI5 {
+	margin-inline: var(--space-2xl);
+}
+.mI6 {
+	margin-inline: var(--space-3xl);
+}
+
+/* margin-inline-start */
+.mIS0 {
+	margin-inline-start: 0;
+}
+.mIS1 {
+	margin-inline-start: var(--space-s);
+}
+.mIS2 {
+	margin-inline-start: var(--space-m);
+}
+.mIS3 {
+	margin-inline-start: var(--space-l);
+}
+.mIS4 {
+	margin-inline-start: var(--space-xl);
+}
+.mIS5 {
+	margin-inline-start: var(--space-2xl);
+}
+.mIS6 {
+	margin-inline-start: var(--space-3xl);
+}
+
+/* margin-inline-end */
+.mIE0 {
+	margin-inline-end: 0;
+}
+.mIE1 {
+	margin-inline-end: var(--space-s);
+}
+.mIE2 {
+	margin-inline-end: var(--space-m);
+}
+.mIE3 {
+	margin-inline-end: var(--space-l);
+}
+.mIE4 {
+	margin-inline-end: var(--space-xl);
+}
+.mIE5 {
+	margin-inline-end: var(--space-2xl);
+}
+.mIE6 {
+	margin-inline-end: var(--space-3xl);
+}
+
+/****************************
+/* Padding
+/****************************/
+.pAuto {
+	padding: 0 auto;
+}
+.p0 {
+	padding: 0;
+}
+.p1 {
+	padding: var(--space-s);
+}
+.p2 {
+	padding: var(--space-m);
+}
+.p3 {
+	padding: var(--space-l);
+}
+.p4 {
+	padding: var(--space-xl);
+}
+.p5 {
+	padding: var(--space-2xl);
+}
+.p6 {
+	padding: var(--space-3xl);
+}
+
+/* padding-block */
+.pB0 {
+	padding-block: 0;
+}
+.pB1 {
+	padding-block: var(--space-s);
+}
+.pB2 {
+	padding-block: var(--space-m);
+}
+.pB3 {
+	padding-block: var(--space-l);
+}
+.pB4 {
+	padding-block: var(--space-xl);
+}
+.pB5 {
+	padding-block: var(--space-2xl);
+}
+.pB6 {
+	padding-block: var(--space-3xl);
+}
+
+/* padding-block-start */
+.pBS0 {
+	padding-block-start: 0;
+}
+.pBS1 {
+	padding-block-start: var(--space-s);
+}
+.pBS2 {
+	padding-block-start: var(--space-m);
+}
+.pBS3 {
+	padding-block-start: var(--space-l);
+}
+.pBS4 {
+	padding-block-start: var(--space-xl);
+}
+.pBS5 {
+	padding-block-start: var(--space-2xl);
+}
+.pBS6 {
+	padding-block-start: var(--space-3xl);
+}
+
+/* padding-block-end */
+.pBE0 {
+	padding-block-end: 0;
+}
+.pBE1 {
+	padding-block-end: var(--space-s);
+}
+.pBE2 {
+	padding-block-end: var(--space-m);
+}
+.pBE3 {
+	padding-block-end: var(--space-l);
+}
+.pBE4 {
+	padding-block-end: var(--space-xl);
+}
+.pBE5 {
+	padding-block-end: var(--space-2xl);
+}
+.pBE6 {
+	padding-block-end: var(--space-3xl);
+}
+
+/* padding-inline */
+.pI0 {
+	padding-inline: 0;
+}
+.pI1 {
+	padding-inline: var(--space-s);
+}
+.pI2 {
+	padding-inline: var(--space-m);
+}
+.pI3 {
+	padding-inline: var(--space-l);
+}
+.pI4 {
+	padding-inline: var(--space-xl);
+}
+.pI5 {
+	padding-inline: var(--space-2xl);
+}
+.pI6 {
+	padding-inline: var(--space-3xl);
+}
+
+/* padding-inline-start */
+.pIS0 {
+	padding-inline-start: 0;
+}
+.pIS1 {
+	padding-inline-start: var(--space-s);
+}
+.pIS2 {
+	padding-inline-start: var(--space-m);
+}
+.pIS3 {
+	padding-inline-start: var(--space-l);
+}
+.pIS4 {
+	padding-inline-start: var(--space-xl);
+}
+.pIS5 {
+	padding-inline-start: var(--space-2xl);
+}
+.pIS6 {
+	padding-inline-start: var(--space-3xl);
+}
+
+/* padding-inline-end */
+.pIE0 {
+	padding-inline-end: 0;
+}
+.pIE1 {
+	padding-inline-end: var(--space-s);
+}
+.pIE2 {
+	padding-inline-end: var(--space-m);
+}
+.pIE3 {
+	padding-inline-end: var(--space-l);
+}
+.pIE4 {
+	padding-inline-end: var(--space-xl);
+}
+.pIE5 {
+	padding-inline-end: var(--space-2xl);
+}
+.pIE6 {
+	padding-inline-end: var(--space-3xl);
+}
+
+/****************************
+/* Flexbox
+/****************************/
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.justify-start {
+	justify-content: flex-start;
+}
+.justify-end {
+	justify-content: flex-end;
+}
+.justify-center {
+	justify-content: center;
+}
+.justify-space-between {
+	justify-content: space-between;
+}
+.justify-space-around {
+	justify-content: space-around;
+}
+.justify-space-evenly {
+	justify-content: space-evenly;
+}
+
+.align-items-stretch {
+	align-items: stretch;
+}
+.align-items-start {
+	align-items: flex-start;
+}
+.align-items-end {
+	align-items: flex-end;
+}
+.align-items-center {
+	align-items: center;
+}
+.align-items-baseline {
+	align-items: baseline;
+}
+
+.align-content-start {
+	align-content: flex-start;
+}
+.align-content-end {
+	align-content: flex-end;
+}
+.align-content-center {
+	align-content: center;
+}
+.align-content-baseline {
+	align-content: baseline;
+}
+.align-content-space-between {
+	align-content: space-between;
+}
+.align-content-space-around {
+	align-content: space-around;
+}
+.align-content-space-evenly {
+	align-content: space-evenly;
+}
+
+.align-self-start {
+	align-self: flex-start;
+}
+.align-self-end {
+	align-self: flex-end;
+}
+.align-self-center {
+	align-self: center;
+}
+.align-self-baseline {
+	align-self: baseline;
+}
+.align-self-stretch {
+	align-self: stretch;
+}
+
+/****************************
+/* Border Radii
+/****************************/
+.border-radius-small {
+	border-radius: var(--space-3xs);
+}
+
+/****************************
+/* A11y Utilities
+/****************************/
+.sr-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	cursor: pointer;
+}

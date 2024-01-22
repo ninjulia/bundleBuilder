@@ -1,0 +1,30 @@
+/****************************
+/*Brand colors for Shentel.com circa 2012
+/****************************/
+:root {
+	--primary: #00446a;
+	--primary-dk: #00304d;
+	--primary-lt: #0081cc;
+	--secondary: #d8672a;
+	--secondary-dk: #ac5120;
+	--secondary-lt: #e39368;
+	--tertiary: #fcb816;
+	--tertiary-dk: #e29f03;
+	--brand-grey: #dfdfdf;
+	--brand-text: #444444;
+
+	--primary-gradient: var(--primary), var(--primary-dk);
+	--secondary-gradient: var(--secondary), var(--secondary-dk);
+	--tertiary-gradient: var(--tertiary), var(--tertiary-dk);
+}
+
+body {
+	color: var(--brand-text);
+	background-color: #ffffff;
+}
+
+.border-grey {
+	border-width: 1px;
+	border-style: solid;
+	border-color: var(--brand-grey);
+}

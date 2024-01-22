@@ -1,0 +1,80 @@
+/****************************
+/*reset
+/****************************/
+html {
+	box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		scroll-behavior: smooth;
+	}
+}
+
+html,
+body {
+	height: 100lvh;
+	width: 100vw;
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+img,
+svg {
+	max-width: 100%;
+	height: auto;
+	font-size: inherit;
+	fill: inherit;
+}
+
+.none {
+	display: none;
+	height: 0;
+	width: 0;
+	font-size: 0;
+}
+
+/*Button Resets from https://github.com/necolas/normalize.css/blob/master/normalize.css */
+button,
+[type='button'] {
+	font-family: inherit;
+	font-size: 100%;
+	line-height: 1.15;
+	margin: 0;
+	padding: 0;
+	overflow: visible;
+	text-transform: none;
+	-webkit-appearance: button;
+	appearance: button;
+	cursor: pointer;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}

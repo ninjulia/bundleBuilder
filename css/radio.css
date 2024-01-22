@@ -1,0 +1,185 @@
+/* ======================== style services radio buttons ======================== */
+
+/* The container */
+.container {
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	justify-content: space-between;
+	background-color: unset;
+	position: relative;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.container > * {
+	flex-grow: 0;
+}
+
+/* add margin to title rather than using gap to avoid layout jump on hover */
+.container .title {
+	margin-block-start: 0.5rem;
+	display: block;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+	height: var(--button-height);
+	width: var(--button-height);
+	clip-path: circle(0.5rem at 50% 65%);
+	background-color: var(--brand-grey);
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center center;
+	transition: background-image 0.15s ease-in-out;
+}
+
+/* Long Distance is wider */
+.checkmark:has(#P0002) {
+	width: 112px;
+}
+
+/* On hover or focus, show desaturated image with outer glow */
+.container:hover input:not(:checked, :disabled) ~ .checkmark,
+.container:focus input:not(:checked, :disabled) ~ .checkmark {
+	clip-path: none;
+	background-color: unset;
+	filter: grayscale(1) drop-shadow(0.5em 0.5em 0.5em var(--brand-grey));
+}
+
+.container:hover #I0003 ~ .checkmark,
+.container:focus #I0003 ~ .checkmark,
+.container #I0003:checked ~ .checkmark {
+	background-image: url(../img/int15.svg);
+}
+
+.container:hover #I0002 ~ .checkmark,
+.container:focus #I0002 ~ .checkmark,
+.container #I0002:checked ~ .checkmark {
+	background-image: url(../img/int10.svg);
+}
+
+.container:hover #I0001 ~ .checkmark,
+.container:focus #I0001 ~ .checkmark,
+.container #I0001:checked ~ .checkmark {
+	background-image: url(../img/int5.svg);
+}
+
+.container:hover #P0001 ~ .checkmark,
+.container:focus #P0001 ~ .checkmark,
+.container #P0001:checked ~ .checkmark {
+	background-image: url(../img/phoneLocal.svg);
+}
+
+.container:hover #P0002 ~ .checkmark,
+.container:focus #P0002 ~ .checkmark,
+.container #P0002:checked ~ .checkmark {
+	width: 96.9px;
+	background-image: url(../img/phoneLD.svg);
+}
+
+.container:hover #V0001 ~ .checkmark,
+.container:focus #V0001 ~ .checkmark,
+.container #V0001:checked ~ .checkmark {
+	background-image: url(../img/videoA.svg);
+}
+
+.container:hover #V0003 ~ .checkmark,
+.container:focus #V0003 ~ .checkmark,
+.container #V0003:checked ~ .checkmark {
+	background-image: url(../img/videoAHD.svg);
+}
+
+.container:hover #V0002 ~ .checkmark,
+.container:focus #V0002 ~ .checkmark,
+.container #V0002:checked ~ .checkmark {
+	background-image: url(../img/videoU.svg);
+}
+
+.container:hover #V0004 ~ .checkmark,
+.container:focus #V0004 ~ .checkmark,
+.container #V0004:checked ~ .checkmark {
+	background-image: url(../img/videoUHD.svg);
+}
+
+.container:hover #noInt ~ .checkmark,
+.container:focus #noInt ~ .checkmark,
+.container:hover #noPhone ~ .checkmark,
+.container:focus #noPhone ~ .checkmark,
+.container:hover #noVideo ~ .checkmark,
+.container:focus #noVideo ~ .checkmark,
+.container #noInt:checked ~ .checkmark,
+.container #noPhone:checked ~ .checkmark,
+.container #noVideo:checked ~ .checkmark {
+	background-image: url(../img/none.svg);
+}
+
+/* When the radio button is checked, remove filter */
+.container input:checked ~ .checkmark {
+	clip-path: none;
+	background-color: unset;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+	content: '';
+	position: absolute;
+	display: none;
+}
+
+/* When No-Service buttons are disabled, show image in inverted greyscale */
+.container input:disabled ~ .checkmark:after {
+	background-image: url(../img/none.svg);
+	filter: invert(100%);
+}
+
+[role='tooltip'],
+.hidetooltip.hidetooltip.hidetooltip + [role='tooltip'] {
+	visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 65px;
+	background: #fff;
+	color: #000;
+	z-index: 2;
+	padding: 0.25rem;
+	border-radius: 0.25rem;
+	font-size: var(--step--1);
+	text-align: left;
+	width: var(--button-height);
+	height: auto;
+	filter: drop-shadow(1px 1px 1px var(--brand-grey));
+}
+
+.container:hover input ~ .checkmark + [role='tooltip'],
+.container:focus input ~ .checkmark + [role='tooltip'] {
+	visibility: visible;
+	display: block;
+}
+
+[role='tooltip']::before,
+.hidetooltip.hidetooltip.hidetooltip + [role='tooltip']::before {
+	content: ' ';
+	position: absolute;
+	top: 30%;
+	left: 0;
+	margin-left: -1rem;
+	border-width: 0.5rem;
+	border-style: solid;
+	border-color: transparent #fff transparent transparent;
+}

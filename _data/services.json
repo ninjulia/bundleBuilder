@@ -1,0 +1,74 @@
+[
+	{
+		"id": "I0001",
+		"name": "5Mbps High-Speed Internet",
+		"shortName": "5Mbps",
+		"type": "internet",
+		"shortDesc": "Single User, Light Web Surfing",
+		"fullDesc": "5Mbps for light internet usage such as email and surfing the web"
+	},
+	{
+		"id": "I0002",
+		"name": "10Mbps High-Speed Internet",
+		"shortName": "10Mbps",
+		"type": "internet",
+		"shortDesc": "Moderate Use, Some Video Streaming",
+		"fullDesc": "10Mbps for medium internet usage like sharing pictures and Social Media"
+	},
+	{
+		"id": "I0003",
+		"name": "15Mbps High-Speed Internet",
+		"shortName": "15Mbps",
+		"type": "internet",
+		"shortDesc": "Multi-users, Hefty Usage",
+		"fullDesc": "15Mbps is great for multiple users or hefty internet usage, like streaming video"
+	},
+	{
+		"id": "P0001",
+		"name": "Unlimited Local Calling",
+		"shortName": "Local",
+		"type": "phone",
+		"shortDesc": null,
+		"fullDesc": "Unlimited Local Calling gets you crystal clear call clarity"
+	},
+	{
+		"id": "P0002",
+		"name": "Unlimited Local and Long Distance Calling",
+		"shortName": "Long Distance",
+		"type": "phone",
+		"shortDesc": null,
+		"fullDesc": "Long Distance calling across the USA"
+	},
+	{
+		"id": "V0001",
+		"name": "Advanced TV",
+		"shortName": "Advanced",
+		"type": "video",
+		"shortDesc": "66 Channels Local &amp; Major Broadcast",
+		"fullDesc": "Advanced TV gives you local and national channels"
+	},
+	{
+		"id": "V0003",
+		"name": "Advanced HD TV",
+		"shortName": "Advanced HD",
+		"type": "video",
+		"shortDesc": "86 Channels Local & Major Broadcast w/ HD Channels",
+		"fullDesc": "Advanced HD TV gives you local and national channels plus HD quality"
+	},
+	{
+		"id": "V0002",
+		"name": "Ultimate TV",
+		"shortName": "Ultimate",
+		"type": "video",
+		"shortDesc": "179 Channels, Maestro Included",
+		"fullDesc": "129 digital cable channels and 50 Music Choice channels. Bundle includes Maestro Master Box plus two Players."
+	},
+	{
+		"id": "V0004",
+		"name": "Ultimate HD TV",
+		"shortName": "Ultimate HD",
+		"type": "video",
+		"shortDesc": "243 Channels w/ HD and Maestro",
+		"fullDesc": "63 quality HD Channels, 129 digital cable channels and 50 Music Choice channels. Bundle includes Maestro Master Box plus two Players."
+	}
+]

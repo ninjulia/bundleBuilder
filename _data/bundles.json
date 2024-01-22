@@ -1,0 +1,353 @@
+[
+	{
+		"internet": "5Mbps High-Speed Internet",
+		"phone": "Unlimited Local Calling",
+		"video": null,
+		"price": 51.95,
+		"link": "#/Shop/Bundles/All_Bundles/5MbpsLocal/"
+	},
+
+	{
+		"internet": "10Mbps High-Speed Internet",
+		"phone": "Unlimited Local Calling",
+		"video": null,
+		"price": 60.95,
+		"link": "#/Shop/Bundles/All_Bundles/10MbpsLocal/"
+	},
+	{
+		"internet": "5Mbps High-Speed Internet",
+		"phone": "Unlimited Local and Long Distance Calling",
+		"video": null,
+		"price": 65.95,
+		"link": "#/Shop/Bundles/All_Bundles/5MbpsLD/"
+	},
+	{
+		"internet": "15Mbps High-Speed Internet",
+		"phone": "Unlimited Local Calling",
+		"video": null,
+		"price": 69.95,
+		"link": "#/Shop/Bundles/All_Bundles/15MbpsLocal/"
+	},
+	{
+		"internet": null,
+		"phone": "Unlimited Local Calling",
+		"video": "Advanced TV",
+		"price": 74.95,
+		"link": "#/Shop/Bundles/All_Bundles/LocalAdvanced/"
+	},
+	{
+		"internet": "10Mbps High-Speed Internet",
+		"phone": "Unlimited Local and Long Distance Calling",
+		"video": null,
+		"price": 74.95,
+		"link": "#/Shop/Bundles/All_Bundles/10MbpsLD/"
+	},
+	{
+		"internet": "5Mbps High-Speed Internet",
+		"phone": null,
+		"video": "Advanced TV",
+		"price": 78.95,
+		"link": "#/Shop/Bundles/All_Bundles/5MbpsAdvanced/"
+	},
+	{
+		"internet": "15Mbps High-Speed Internet",
+		"phone": "Unlimited Local and Long Distance Calling",
+		"video": null,
+		"price": 83.95,
+		"link": "#/Shop/Bundles/All_Bundles/15MbpsLD/"
+	},
+	{
+		"internet": null,
+		"phone": "Unlimited Local Calling",
+		"video": "Advanced HD TV",
+		"price": 84.95,
+		"link": "#/Shop/Bundles/All_Bundles/LocalAdvancedHD/"
+	},
+	{
+		"internet": "10Mbps High-Speed Internet",
+		"phone": null,
+		"video": "Advanced TV",
+		"price": 87.95,
+		"link": "#/Shop/Bundles/All_Bundles/10MbpsAdvanced/"
+	},
+	{
+		"internet": null,
+		"phone": "Unlimited Local and Long Distance Calling",
+		"video": "Advanced TV",
+		"price": 88.95,
+		"link": "#/Shop/Bundles/All_Bundles/LDAdvanced/"
+	},
+	{
+		"internet": "5Mbps High-Speed Internet",
+		"phone": null,
+		"video": "Advanced HD TV",
+		"price": 93.95,
+		"link": "#/Shop/Bundles/All_Bundles/5MbpsAdvancedHD/"
+	},
+	{
+		"internet": "15Mbps High-Speed Internet",
+		"phone": null,
+		"video": "Advanced TV",
+		"price": 96.95,
+		"link": "#/Shop/Bundles/All_Bundles/15MbpsAdvanced/"
+	},
+	{
+		"internet": "5Mbps High-Speed Internet",
+		"phone": "Unlimited Local Calling",
+		"video": "Advanced TV",
+		"price": 96.95,
+		"link": "#/Shop/Bundles/All_Bundles/5MbpsLocalAdvanced/"
+	},
+	{
+		"internet": null,
+		"phone": "Unlimited Local and Long Distance Calling",
+		"video": "Advanced HD TV",
+		"price": 98.95,
+		"link": "#/Shop/Bundles/All_Bundles/LDAdvancedHD/"
+	},
+	{
+		"internet": "10Mbps High-Speed Internet",
+		"phone": null,
+		"video": "Advanced HD TV",
+		"price": 102.95,
+		"link": "#/Shop/Bundles/All_Bundles/10MbpsAdvancedHD/"
+	},
+	{
+		"internet": "10Mbps High-Speed Internet",
+		"phone": "Unlimited Local Calling",
+		"video": "Advanced TV",
+		"price": 105.95,
+		"link": "#/Shop/Bundles/All_Bundles/10MbpsLocalAdvanced/"
+	},
+	{
+		"internet": "5Mbps High-Speed Internet",
+		"phone": "Unlimited Local and Long Distance Calling",
+		"video": "Advanced TV",
+		"price": 108.95,
+		"link": "#/Shop/Bundles/All_Bundles/5MbpsLDAdvanced/"
+	},
+	{
+		"internet": "15Mbps High-Speed Internet",
+		"phone": null,
+		"video": "Advanced HD TV",
+		"price": 110.95,
+		"link": "#/Shop/Bundles/All_Bundles/15MbpsAdvancedHD/"
+	},
+	{
+		"internet": "5Mbps High-Speed Internet",
+		"phone": "Unlimited Local Calling",
+		"video": "Advanced HD TV",
+		"price": 111.95,
+		"link": "#/Shop/Bundles/All_Bundles/5MbpsLocalAdvancedHD/"
+	},
+	{
+		"internet": "15Mbps High-Speed Internet",
+		"phone": "Unlimited Local Calling",
+		"video": "Advanced TV",
+		"price": 114.95,
+		"link": "#/Shop/Bundles/All_Bundles/15MbpsLocalAdvanced/"
+	},
+	{
+		"internet": "10Mbps High-Speed Internet",
+		"phone": "Unlimited Local and Long Distance Calling",
+		"video": "Advanced TV",
+		"price": 117.95,
+		"link": "#/Shop/Bundles/All_Bundles/10MbpsLDAdvanced/"
+	},
+	{
+		"internet": "10Mbps High-Speed Internet",
+		"phone": "Unlimited Local Calling",
+		"video": "Advanced HD TV",
+		"price": 120.95,
+		"link": "#/Shop/Bundles/All_Bundles/10MbpsLocalAdvancedHD/"
+	},
+	{
+		"internet": "5Mbps High-Speed Internet",
+		"phone": "Unlimited Local and Long Distance Calling",
+		"video": "Advanced HD TV",
+		"price": 123.95,
+		"link": "#/Shop/Bundles/All_Bundles/5MbpsLDAdvancedHD/"
+	},
+	{
+		"internet": "15Mbps High-Speed Internet",
+		"phone": "Unlimited Local and Long Distance Calling",
+		"video": "Advanced TV",
+		"price": 126.95,
+		"link": "#/Shop/Bundles/All_Bundles/15MbpsLDAdvanced/"
+	},
+	{
+		"internet": "15Mbps High-Speed Internet",
+		"phone": "Unlimited Local Calling",
+		"video": "Advanced HD TV",
+		"price": 129.95,
+		"link": "#/Shop/Bundles/All_Bundles/15MbpsLocalAdvancedHD/"
+	},
+	{
+		"internet": "10Mbps High-Speed Internet",
+		"phone": "Unlimited Local and Long Distance Calling",
+		"video": "Advanced HD TV",
+		"price": 132.95,
+		"link": "#/Shop/Bundles/All_Bundles/10MbpsLDAdvancedHD/"
+	},
+	{
+		"internet": "15Mbps High-Speed Internet",
+		"phone": "Unlimited Local and Long Distance Calling",
+		"video": "Advanced HD TV",
+		"price": 141.95,
+		"link": "#/Shop/Bundles/All_Bundles/15MbpsLDAdvancedHD/"
+	},
+	{
+		"internet": "5Mbps High-Speed Internet",
+		"phone": null,
+		"video": "Ultimate TV",
+		"price": 103.95,
+		"link": "#/Shop/Bundles/All_Bundles/5MbpsUltimate/"
+	},
+	{
+		"internet": "5Mbps High-Speed Internet",
+		"phone": null,
+		"video": "Ultimate HD TV",
+		"price": 116.8,
+		"link": "#/Shop/Bundles/All_Bundles/5MbpsUltimateHD/"
+	},
+	{
+		"internet": null,
+		"phone": "Unlimited Local Calling",
+		"video": "Ultimate TV",
+		"price": 94.95,
+		"link": "#/Shop/Bundles/All_Bundles/LocalUltimate/"
+	},
+	{
+		"internet": null,
+		"phone": "Unlimited Local and Long Distance Calling",
+		"video": "Ultimate TV",
+		"price": 108.95,
+		"link": "#/Shop/Bundles/All_Bundles/LDUltimate/"
+	},
+	{
+		"internet": null,
+		"phone": "Unlimited Local Calling",
+		"video": "Ultimate HD TV",
+		"price": 107.8,
+		"link": "#/Shop/Bundles/All_Bundles/LocalUltimateHD/"
+	},
+	{
+		"internet": null,
+		"phone": "Unlimited Local and Long Distance Calling",
+		"video": "Ultimate HD TV",
+		"price": 121.8,
+		"link": "#/Shop/Bundles/All_Bundles/LDUltimateHD/"
+	},
+	{
+		"internet": "10Mbps High-Speed Internet",
+		"phone": null,
+		"video": "Ultimate TV",
+		"price": 112.95,
+		"link": "#/Shop/Bundles/All_Bundles/10MbpsUltimate/"
+	},
+	{
+		"internet": "10Mbps High-Speed Internet",
+		"phone": null,
+		"video": "Ultimate HD TV",
+		"price": 125.8,
+		"link": "#/Shop/Bundles/All_Bundles/10MbpsUltimateHD/"
+	},
+	{
+		"internet": "15Mbps High-Speed Internet",
+		"phone": null,
+		"video": "Ultimate TV",
+		"price": 120.95,
+		"link": "#/Shop/Bundles/All_Bundles/15MbpsUltimate/"
+	},
+	{
+		"internet": "15Mbps High-Speed Internet",
+		"phone": null,
+		"video": "Ultimate HD TV",
+		"price": 133.8,
+		"link": "#/Shop/Bundles/All_Bundles/15MbpsUltimateHD/"
+	},
+	{
+		"internet": "5Mbps High-Speed Internet",
+		"phone": "Unlimited Local Calling",
+		"video": "Ultimate TV",
+		"price": 121.95,
+		"link": "#/Shop/Bundles/All_Bundles/5MbpsLocalUltimate/"
+	},
+	{
+		"internet": "5Mbps High-Speed Internet",
+		"phone": "Unlimited Local and Long Distance Calling",
+		"video": "Ultimate TV",
+		"price": 133.95,
+		"link": "#/Shop/Bundles/All_Bundles/5MbpsLDUltimate/"
+	},
+	{
+		"internet": "5Mbps High-Speed Internet",
+		"phone": "Unlimited Local Calling",
+		"video": "Ultimate HD TV",
+		"price": 134.8,
+		"link": "#/Shop/Bundles/All_Bundles/5MbpsLocalUltimateHD/"
+	},
+	{
+		"internet": "5Mbps High-Speed Internet",
+		"phone": "Unlimited Local and Long Distance Calling",
+		"video": "Ultimate HD TV",
+		"price": 146.8,
+		"link": "#/Shop/Bundles/All_Bundles/5MbpsLDUltimateHD/"
+	},
+	{
+		"internet": "10Mbps High-Speed Internet",
+		"phone": "Unlimited Local Calling",
+		"video": "Ultimate TV",
+		"price": 130.95,
+		"link": "#/Shop/Bundles/All_Bundles/10MbpsLocalUltimate/"
+	},
+	{
+		"internet": "10Mbps High-Speed Internet",
+		"phone": "Unlimited Local and Long Distance Calling",
+		"video": "Ultimate TV",
+		"price": 142.95,
+		"link": "#/Shop/Bundles/All_Bundles/10MbpsLDUltimate/"
+	},
+	{
+		"internet": "10Mbps High-Speed Internet",
+		"phone": "Unlimited Local Calling",
+		"video": "Ultimate HD TV",
+		"price": 143.8,
+		"link": "#/Shop/Bundles/All_Bundles/10MbpsLocalUltimateHD/"
+	},
+	{
+		"internet": "10Mbps High-Speed Internet",
+		"phone": "Unlimited Local and Long Distance Calling",
+		"video": "Ultimate HD TV",
+		"price": 155.8,
+		"link": "#/Shop/Bundles/All_Bundles/10MbpsLDUltimateHD/"
+	},
+	{
+		"internet": "15Mbps High-Speed Internet",
+		"phone": "Unlimited Local Calling",
+		"video": "Ultimate TV",
+		"price": 139.95,
+		"link": "#/Shop/Bundles/All_Bundles/15MbpsLocalUltimate/"
+	},
+	{
+		"internet": "15Mbps High-Speed Internet",
+		"phone": "Unlimited Local and Long Distance Calling",
+		"video": "Ultimate TV",
+		"price": 151.95,
+		"link": "#/Shop/Bundles/All_Bundles/15MbpsLDUltimate/"
+	},
+	{
+		"internet": "15Mbps High-Speed Internet",
+		"phone": "Unlimited Local Calling",
+		"video": "Ultimate HD TV",
+		"price": 152.8,
+		"link": "#/Shop/Bundles/All_Bundles/15MbpsLocalUltimateHD/"
+	},
+	{
+		"internet": "15Mbps High-Speed Internet",
+		"phone": "Unlimited Local and Long Distance Calling",
+		"video": "Ultimate HD TV",
+		"price": 164.8,
+		"link": "#/Shop/Bundles/All_Bundles/15MbpsLDUltimateHD/"
+	}
+]

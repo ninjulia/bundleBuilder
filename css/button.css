@@ -1,0 +1,43 @@
+/*only pull in the styled button I need */
+
+.btn {
+	display: inline-block;
+	font-weight: 700;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border: 1px solid transparent;
+	padding: var(--space-3xs) var(--space-2xs);
+	border-radius: var(--space-3xs);
+	transition: color 0.15s ease-in-out, background-image 0.15s ease-in-out, border-color 0.15s ease-in-out,
+		box-shadow 0.15s ease-in-out;
+}
+
+.btn-secondary {
+	background-image: linear-gradient(to bottom, var(--secondary-gradient));
+	background-color: var(--secondary);
+	border-color: var(--secondary);
+	color: #fff;
+}
+
+.btn:not(:disabled):not(.disabled) {
+	cursor: pointer;
+}
+
+.btn-secondary:hover,
+.btn-secondary:active {
+	background-image: linear-gradient(to top, var(--secondary-gradient));
+	background-color: var(--secondary);
+	border-color: var(--secondary);
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active {
+	background-color: var(--secondary-lt);
+	border-color: var(--secondary);
+	color: #fff;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bundle Builder</title>
+    <link rel="stylesheet" href="./css/styles-min.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>">
+    <noscript>
+        <style>
+            #bundlerForm>* {
+                opacity: 0.5
+            }
+
+            .service-container,
+            #priceContent,
+            #resultsDisplay {
+                display: none;
+            }
+        </style>
+    </noscript>
+</head>
+
+<body>
+    <!-- build in SECTION for re-use -->
+    <section id="bundler">
+        <div id="bundlerContainer">
+            <noscript class="display-5 error p1 border-radius-small">Please enable JavaScript to build your
+                bundle.</noscript>
+            <form id="bundlerForm" action="#" class="flex-column">
+                <header id="bundlerHeader" class="flex-row justify-space-between align-items-center m0 pB1">
+                    <h1 class="display-3 m0 header-title">Choose Your Bundle</h1>
+                    <fieldset id="sortBy" class="flex-row justify-space-around align-items-center">
+                        <legend for="sortBy">
+                            <h2 id="sortByTitle" class="display-5 m0">Sort by:</h2>
+                        </legend>
+                        <label for="selectServices" class="flex-row align-items-center">
+                            <input type="radio" id="selectServices" name="sortby" value="services" checked />
+                            <span class="checkmark"></span>
+                            <span class="title">Services</span>
+                        </label>
+                        <label for="selectPrice" class="flex-row align-items-center">
+                            <input type="radio" id="selectPrice" name="sortby" value="price" />
+                            <span class="checkmark"></span>
+                            <span class="title">Price</span>
+                        </label>
+                    </fieldset>
+                </header>
+
+                <!-- start services -->
+                <div id="services">
+                    <fieldset id="internet" class="m0 pB2" aria-describedby="testTip">
+                        <legend>
+                            <h3 class="display-5 m0 pB1">Internet</h3>
+                        </legend>
+                        <div class="service-container flex-row justify-space-between mI3">
+                            <!-- services dynamically set via js -->
+                            <label for="noInt" class="container">
+                                <input type="radio" id="noInt" name="internet" value="null" />
+                                <span class="checkmark"></span>
+                                <img src="./img/none.svg" alt="" />
+                                <span class="title">No Internet</span>
+                            </label>
+                        </div>
+                    </fieldset>
+                    <fieldset id="phone" class="m0 pB2">
+                        <legend>
+                            <h3 class="display-5 m0 pB1">Phone</h3>
+                        </legend>
+                        <div class="service-container flex-row justify-space-between mI6">
+                            <!-- services dynamically set via js -->
+                            <label for="noPhone" class="container">
+                                <!-- changed name='phone' to name='voice' to avoid browser autofill issue -->
+                                <input type="radio" id="noPhone" name="voice" value="null" />
+                                <span class="checkmark"></span>
+                                <img src="./img/none.svg" alt="" />
+                                <span class="title">No Phone</span>
+                            </label>
+                        </div>
+                    </fieldset>
+                    <fieldset id="video" class="m0 pB2">
+                        <legend>
+                            <h3 class="display-5 m0 pB1">Video</h3>
+                        </legend>
+                        <div class="service-container flex-row justify-space-between mI2">
+                            <!-- services dynamically set via js -->
+                            <label for="noPhone" class="container">
+                                <input type="radio" id="noVideo" name="video" value="null" />
+                                <span class="checkmark"></span>
+                                <img src="./img/none.svg" alt="" />
+                                <span class="title">No Video</span>
+                            </label>
+                        </div>
+                    </fieldset>
+                </div>
+                <!-- end services -->
+
+                <!-- start pricing -->
+                <div id="price" class="pB1">
+                    <h2 class="display-4 m0">Price Per Month</h2>
+                    <div id="priceContent" class="flex-row justify-center align-items-center mAuto">
+                        <button type="button" value="-" id="scrollLeft" class="border-radius-small p0 m0"><span
+                                class="sr-hidden">View
+                                Lower Price</span></button>
+                        <div id="priceDisplay"
+                            class="border-radius-small border-grey flex-row justify-center align-items-center">
+                            <h3 class="display-2 m0 "><sup class="display-5 m0 p0">$</sup><span id="pricing"></span>
+                            </h3>
+                        </div>
+                        <button type="button" value="+" id="scrollRight" class="border-radius-small p0 m0"><span
+                                class="sr-hidden">View
+                                Higher Price</span></button>
+                    </div>
+                </div>
+                <!-- end pricing -->
+
+                <!-- start bundle readout -->
+                <div id="results" class="pB1">
+                    <h2 class="display-4 m0">Your Bundle</h2>
+                    <div class="flex-row justify-center align-items-center results-container mAuto">
+                        <div id="resultsDisplay" class="border-radius-small border-grey flex-column">
+                            <!-- this will update via js, show error message to start -->
+                            <h3 class="display-5 mB0" id="bundleName">We're sorry, something went wrong. Please try
+                                building your bundle again later.</h3>
+                            <ul>
+                                <li id="intDesc"></li>
+                                <li id="phoneDesc"></li>
+                                <li id="videoDesc"></li>
+                            </ul>
+                            <a class="btn btn-secondary align-self-center" id="bundleLink"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end bundle readout -->
+            </form>
+            <!-- modal for error messages -->
+            <dialog id="bundlerDialog" class="pI2">
+                <form method="dialog">
+                    <button class="btn btn-secondary mAuto" autofocus>OK</button>
+                </form>
+            </dialog>
+        </div>
+    </section>
+
+    <script type="module" src="./js/script.js"></script>
+</body>
+
+</html>
