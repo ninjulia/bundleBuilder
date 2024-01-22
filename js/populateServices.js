@@ -6,7 +6,6 @@
 import { errorModal, getData } from './fetchData.js';
 
 //get Services from json
-// const promiseServices = getData('https://raw.githubusercontent.com/ninjulia/bundleBuilder/master/data/services.json');
 const promiseServices = getData('./data/services.json');
 const services = await Promise.resolve(promiseServices)
 	.then((data) => data)
