@@ -1,8 +1,12 @@
 //imports
-import { errorModal } from './fetchData.js';
-import populateServices from './populateServices.js';
-import { getBundleByPriceIndex, getBundleByService, scrollPrice } from './getBundles.js';
-import setBundle from './setBundle.js';
+
+import populateServices from 'https://ninjulia.github.io/bundleBuilder/populateServices.js';
+import {
+	getBundleByPriceIndex,
+	getBundleByService,
+	scrollPrice,
+} from 'https://ninjulia.github.io/bundleBuilder/getBundles.js';
+import setBundle from 'https://ninjulia.github.io/bundleBuilder/setBundle.js';
 
 ////////////////////////////////////
 //  Toggle Services && Price Order of Appearance
