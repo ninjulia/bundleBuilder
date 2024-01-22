@@ -1,5 +1,4 @@
 //imports
-import { errorModal } from './fetchData.js';
 import populateServices from './populateServices.js';
 import { getBundleByPriceIndex, getBundleByService, scrollPrice } from './getBundles.js';
 import setBundle from './setBundle.js';
