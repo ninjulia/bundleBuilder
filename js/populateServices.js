@@ -3,10 +3,11 @@
 ////////////////////////////////////
 
 //imports
-import { errorModal, getData } from 'https://ninjulia.github.io/bundleBuilder/fetchData.js';
+import { errorModal, getData } from './fetchData.js';
 
 //get Services from json
-const promiseServices = getData('https://ninjulia.github.io/bundleBuilder/_data/services.json');
+// const promiseServices = getData('https://raw.githubusercontent.com/ninjulia/bundleBuilder/master/_data/services.json');
+const promiseServices = getData('./data/services.json');
 const services = await Promise.resolve(promiseServices)
 	.then((data) => data)
 	.catch((e) => errorModal(e));
