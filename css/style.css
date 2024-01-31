@@ -91,13 +91,15 @@ header,
 }
 
 /* add focus indicator for keyboard users */
-#bundlerForm label:has(input:focus) {
+#sortBy label:has(input:focus) > .checkmark,
+#services label:has(input:focus) {
 	outline: 2px solid var(--primary-dk);
-	outline-offset: var(--space-xs);
+	outline-offset: 0.25em;
 }
 
 /* hide focus indicator for mouse */
-#bundlerForm label:has(input:focus:not(:focus-visible)) {
+#sortBy label:has(input:focus:not(:focus-visible)) > .checkmark,
+#services label:has(input:focus:not(:focus-visible)) {
 	outline: none;
 }
 
