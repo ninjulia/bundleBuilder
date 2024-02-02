@@ -92,14 +92,17 @@ header,
 
 /* add focus indicator for keyboard users */
 #sortBy label:has(input:focus) > .checkmark,
-#services label:has(input:focus) {
-	outline: 2px solid var(--primary-dk);
-	outline-offset: 0.25em;
+#services label:has(input:focus),
+#bundleLink:focus-visible {
+	outline: 1px solid var(--primary-dk);
+	outline-offset: var(--space-3xs);
+	border-radius: var(--space-3xs);
 }
 
 /* hide focus indicator for mouse */
 #sortBy label:has(input:focus:not(:focus-visible)) > .checkmark,
-#services label:has(input:focus:not(:focus-visible)) {
+#services label:has(input:focus:not(:focus-visible)),
+#priceContent button:focus-visible {
 	outline: none;
 }
 
@@ -269,6 +272,7 @@ header,
 /****************************
 /* PRICE
 /****************************/
+
 #price,
 #results {
 	display: grid;
@@ -289,8 +293,6 @@ header,
 	align-self: center;
 	width: calc(5 * var(--space-3xl));
 	gap: var(--space-s);
-
-	/* margin: 0 auto; */
 }
 
 #priceDisplay {
@@ -305,23 +307,66 @@ header,
 
 #scrollLeft,
 #scrollRight {
-	height: calc(var(--button-height) - var(--space-l));
-	width: calc(var(--button-height) - var(--space-l));
-	border-width: var(--space-m);
-	border-style: solid;
-	border-top-color: transparent;
-	border-bottom-color: transparent;
 	background-color: unset;
+	border: none;
+	position: relative;
+
+	height: var(--button-height);
+	width: var(--button-height);
 }
 
-#scrollLeft {
-	border-right-color: var(--secondary);
-	border-left-color: transparent;
+/* display button as triangle */
+#priceContent button .shape {
+	height: var(--button-height);
+	width: var(--button-height);
+
+	background-color: var(--secondary);
+
+	position: absolute;
+	z-index: 3;
 }
 
-#scrollRight {
-	border-right-color: transparent;
-	border-left-color: var(--secondary);
+/* fake 3px outline offset */
+#priceContent button .shape-offset {
+	height: calc(var(--button-height) + 6px);
+	width: calc(var(--button-height) + 6px);
+	background-color: white;
+	position: absolute;
+	z-index: 2;
+}
+
+/* display keyboard focus ring as 1px triangle */
+#priceContent button .shape-focus {
+	height: calc(var(--button-height) + 10px);
+	width: calc(var(--button-height) + 10px);
+	background-color: var(--primary-dk);
+	position: absolute;
+	z-index: 1;
+	display: none;
+}
+
+#priceContent button:focus-visible .shape-focus {
+	display: block;
+}
+
+#scrollLeft .shape,
+#scrollLeft .shape-offset,
+#scrollLeft .shape-focus {
+	transform: rotate(180deg);
+}
+
+#priceContent #scrollLeft .shape-offset {
+	margin-inline-end: -1.5px;
+}
+#priceContent #scrollRight .shape-offset {
+	margin-inline-start: -1.25px;
+}
+
+#priceContent #scrollLeft .shape-focus {
+	margin-inline-end: -2px;
+}
+#priceContent #scrollRight .shape-focus {
+	margin-inline-start: -2.25px;
 }
 
 /****************************

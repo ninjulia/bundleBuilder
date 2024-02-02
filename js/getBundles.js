@@ -104,7 +104,7 @@ function getBundleByService(myBundle) {
 function scrollPrice(e, myBundle) {
 	let listMax = Array.from(priceList).length - 1;
 
-	if (e.target.value === '-') {
+	if (e.currentTarget.value === '-') {
 		0 < myBundle.price.priceListIndex ? myBundle.price.priceListIndex-- : (myBundle.price.priceListIndex = listMax);
 	} else {
 		myBundle.price.priceListIndex < listMax ? myBundle.price.priceListIndex++ : (myBundle.price.priceListIndex = 0);

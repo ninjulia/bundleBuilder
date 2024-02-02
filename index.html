@@ -101,17 +101,34 @@
                 <div id="price" class="pB1">
                     <h2 class="display-4 m0">Price Per Month</h2>
                     <div id="priceContent" class="flex-row justify-center align-items-center mAuto">
-                        <button type="button" value="-" id="scrollLeft" class="border-radius-small p0 m0"><span
-                                class="sr-hidden">View
-                                Lower Price</span></button>
+                        <svg width="50" height="96" viewBox="0 0 50 96" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <clipPath id="myClip" clipPathUnits="objectBoundingBox"
+                                    transform="scale(0.01 0.010416)">
+                                    <path
+                                        d="M0 14.6114C0 6.28206 0 2.1174 2.48917 1.102C4.97833 0.086605 7.89135 3.06298 13.7174 9.01572L43.4605 39.4057C46.0741 42.0762 47.3809 43.4114 47.3715 45.0564C47.3621 46.7014 46.0401 48.0216 43.3962 50.662L13.6531 80.3652C7.84172 86.1688 4.93605 89.0706 2.46803 88.0473C0 87.024 0 82.9176 0 74.7046V14.6114Z" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <button type="button" value="-" id="scrollLeft"
+                            class="border-radius-small p0 m0 flex-row justify-end align-items-center">
+                            <span class="shape" style="clip-path:url('#myClip')"></span>
+                            <span class="shape-offset" style="clip-path:url('#myClip')"></span>
+                            <span class="shape-focus" style="clip-path:url('#myClip')"></span>
+                            <span class="sr-hidden">View Lower Price</span>
+                        </button>
                         <div id="priceDisplay"
                             class="border-radius-small border-grey flex-row justify-center align-items-center">
                             <h3 class="display-2 m0 "><sup class="display-5 m0 p0">$</sup><span id="pricing"></span>
                             </h3>
                         </div>
-                        <button type="button" value="+" id="scrollRight" class="border-radius-small p0 m0"><span
-                                class="sr-hidden">View
-                                Higher Price</span></button>
+                        <button type="button" value="+" id="scrollRight"
+                            class="border-radius-small p0 m0 flex-row justify-start align-items-center">
+                            <span class="shape" style="clip-path:url('#myClip')"></span>
+                            <span class="shape-offset" style="clip-path:url('#myClip')"></span>
+                            <span class="shape-focus" style="clip-path:url('#myClip')"></span>
+                            <span class="sr-hidden">View Higher Price</span>
+                        </button>
                     </div>
                 </div>
                 <!-- end pricing -->
